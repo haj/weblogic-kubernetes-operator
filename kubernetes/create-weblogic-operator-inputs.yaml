@@ -22,7 +22,7 @@ targetNamespaces: default
 # The docker image containing the operator code.
 # Ensure that the image is built or published to an appropriate registry
 # See https://github.com/oracle/weblogic-kubernetes-operator/blob/master/site/installation.md
-weblogicOperatorImage: oracle/weblogic-kubernetes-operator:1.1
+weblogicOperatorImage: $REPO_REPOSITORY/weblogic-kubernetes-operator:$IMAGE_TAG_OPERATOR
 
 # The image pull policy for the operator docker image.
 weblogicOperatorImagePullPolicy: IfNotPresent
